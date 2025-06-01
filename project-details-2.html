@@ -70,7 +70,7 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>project Details</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p class="mb-0">This project is based on algorithms such as the genetic algorithm, particle swarm optimization, and their combination</p>
             </div>
           </div>
         </div>
@@ -94,33 +94,75 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="Projects-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
+              <a href="#" class="active">Genetic Algorithm</a>
+              <a href="#">Particule Swarm Optimization</a>
             </div>
 
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+            <h4>Results:</h4>
+            <p>This project received a grade of 18, delivering an optimized genetic algorithm by coupling it with Particle Swarm
+            Optimization.</p>
+
+            <!-- GitHub Section -->
+            <div class="github-section" data-aos="fade-up" data-aos-delay="300">
+              <h4>View Project Code</h4>
+              <a href="https://github.com/HammadaMohamed/Travelling-Salesman-with-genetic-algorithm" class="github-btn" target="_blank">
+                <i class="bi bi-github"></i>
+                View on GitHub
+              </a>
+            </div>
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/portfolio/portfolio-1.webp" alt="" class="img-fluid Projects-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
+            <img src="assets/img/projects/project-2.jpg" alt="" class="img-fluid Projects-img">
+            <h3>Travelling Salesman With Genetic Algorithm</h3>
             <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
+              I focus on solving the Traveling Salesman Problem (TSP), where each route between cities is associated with a specific
+              cost. My goal is to optimize this problem by applying the metaheuristic genetic algorithm to find the most efficient
+              solution.
+            </p>
+            <p>
+              The Genetic algorithm is an optimization method inspired by natural evolution principles such as selection, crossover,
+              and mutation. It works by creating a population of candidate solutions (called “individuals”) to a given problem. These
+              individuals evolve over generations to improve their quality.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Initialization: An initial population of solutions is generated randomly.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Evaluation: Each individual is evaluated using a fitness function that measures solution quality.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Selection: The best individuals are selected to reproduce.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Crossover: Selected individuals exchange segments of their solutions to produce a new generation.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Mutation: Some solutions undergo random modifications to maintain genetic diversity.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Repetition: The process repeats over multiple generations until an optimal or satisfactory solution is found.</span></li>
             </ul>
             <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
+              The genetic algorithm is effective for complex problems because it explores a large solution space and can avoid local
+              minima.
             </p>
+            <p><strong>Improvements to the Genetic Algorithm</strong></p>
             <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
+              A possible enhancement of the genetic algorithm involves integrating adaptation and diversification mechanisms to
+              improve convergence and avoid getting trapped in suboptimal solutions. Here are some specific strategies:
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Adaptive Mutation: 
+              Instead of using a fixed mutation rate, dynamically adjust the rate based on population diversity. For example, if
+              diversity decreases and solutions converge too quickly to the same point, increase the mutation rate to explore new
+              regions of the solution space.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Intelligent Crossover:
+              Rather than random crossover, use a guided crossover based on solution similarity. This allows combining the most
+              promising parts of parent solutions. For example, in TSP, a crossover could try to preserve optimal subtours from the parents.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Solution Repair:
+              Sometimes mutations or crossovers produce invalid solutions (e.g., in TSP, routes that visit the same city twice).
+              Repair mechanisms can correct these while maintaining solution validity.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Hybridization with Local Search Algorithms:
+              Combining the genetic algorithm with a local optimization method (such as tabu search or descent algorithms) refines
+              found solutions. After generating new solutions through crossover, a local search phase can further improve individuals.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Multiple Populations and Migration:
+              Divide the population into isolated subpopulations (“islands”) that evolve independently for several generations, then
+              allow migration between them. This maintains greater diversity in the overall population and prevents premature convergence.</span></li>
+            </ul>
+            <p>
+              These improvements make the genetic algorithm more robust and efficient, especially when applied to complex problems
+              like the Traveling Salesman Problem.
             </p>
           </div>
 
